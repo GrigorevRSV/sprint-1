@@ -1,0 +1,54 @@
+.feynman {
+  position: relative;
+  min-height: 890px;                 /* ТЗ: высота секции */            /* :contentReference[oaicite:0]{index=0} */
+  background-color: var(--gray-light); /* #f2f2f2 из палитры */          /* :contentReference[oaicite:1]{index=1} */
+  padding-top: 100px;                /* отступ сверху по схеме */        /* :contentReference[oaicite:2]{index=2} */
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Заголовок */
+.feynman__title {
+  width: 648px;                      /* ТЗ: ширина текста */             /* :contentReference[oaicite:3]{index=3} */
+  margin: 0 auto;
+  font-size: 120px;                  /* ТЗ: типографика */               /* :contentReference[oaicite:4]{index=4} */
+  line-height: 1.15;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+/* Подзаголовок */
+.feynman__subtitle {
+  width: 648px;                      /* такая же ширина блока текста */  /* :contentReference[oaicite:5]{index=5} */
+  margin: 70px auto 0;               /* ТЗ: промежуток 70px сверху */    /* :contentReference[oaicite:6]{index=6} */
+  font-size: 36px;                   /* ТЗ */                             /* :contentReference[oaicite:7]{index=7} */
+  line-height: 51px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ссылка “Подробнее →” справа на высоте 50% */
+.feynman__link {
+  position: absolute;
+  right: 48px;                       /* ТЗ: от правого края 48px */      /* :contentReference[oaicite:8]{index=8} */
+  top: 50%;                          /* ТЗ: на половине высоты секции */ /* :contentReference[oaicite:9]{index=9} */
+  transform: translateY(-50%);
+  font-size: 36px;                   /* ТЗ */                             /* :contentReference[oaicite:10]{index=10} */
+  line-height: 51px;
+  color: var(--blue);
+  text-decoration: none;
+  z-index: 1;
+}
+.feynman__link:hover { opacity: .7; }
+
+/* Иллюстрация внизу слева */
+.feynman__image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 867px;                      /* ТЗ: 867×637 */                    /* :contentReference[oaicite:11]{index=11} */
+  height: 637px;
+  object-fit: cover;
+  z-index: 0;
+}

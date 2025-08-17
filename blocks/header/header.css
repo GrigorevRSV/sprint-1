@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* Заголовок */
+.header__title {
+  max-width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: 700;
+  margin-top: 250px;
+  z-index: 2; /* поверх квадрата и картинки */
+  word-break: break-word; /* переносим очень длинные слова */
+  hyphens: auto; 
+}
+
+/* Подзаголовок */
+.header__subtitle {
+  max-width: 388px;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: auto;   /* ключевая строка — прижимает вниз */
+  margin-bottom: 0;   /* отступ снизу теперь задаёт padding у .header */
+  z-index: 2;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Ссылка в подзаголовке */
+.header__link {
+  color: var(--blue);
+  text-decoration: none;
+}
+.header__link:hover {
+  opacity: 0.7;
+}
+
+/* Иллюстрация справа */
+.header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 765px;
+  height: 608px;
+  object-fit: fill;
+  z-index: 1;
+  pointer-events: none;   /* картинка не перекрывает клики по ссылке */
+}
+
+/* Синий квадрат */
+.header__square-pic {
+  position: absolute;
+  right: 0;
+  top: 64px;
+  width: 568px;
+  height: 568px;
+  background-color: var(--blue);
+  z-index: 0;
+}
+
+@supports (overflow-wrap: anywhere) {
+  .header__title,
+  .header__subtitle {
+    overflow-wrap: anywhere;
+  }
+}

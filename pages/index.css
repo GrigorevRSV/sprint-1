@@ -1,0 +1,47 @@
+@import url("../styles/normalize.css");
+@import url("../blocks/logo/logo.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/two-columns/two-columns.css");
+@import url("../blocks/section-title/section-title.css");
+@import url("../blocks/section-subtitle/section-subtitle.css");
+@import url("../blocks/table/table.css");
+@import url("../blocks/feynman/feynman.css");
+@import url("../blocks/kaufman/kaufman.css");
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/description/description.css");
+@import url("../blocks/digits/digits.css");
+
+/* Глобальные переменные из ТЗ */
+:root {
+  --gray-dark: #1f1f1f;
+  --gray-light: #f2f2f2;
+  --blue: #2f80ed;
+  --text-black: #000000;
+}
+
+/* Базовые правила из ТЗ */
+.page {
+  min-width: 1100px;  /* ТЗ: min 1100px */
+  max-width: 1600px;  /* ТЗ: max 1600px */
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif; /* ТЗ: семействo шрифтов */
+  color: var(--text-black);
+  background: #fff;
+}
+
+/* Сбрасываем унаследованные отступы у текстовых элементов на уровне блока (ТЗ) */
+h1, h2, h3, p, ul, ol { margin: 0; padding: 0; }
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Вспомогательные утилиты (по мере надобности можно расширять) */
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+.digits { padding: 100px 0; }
+
+a:hover { opacity: .8; }
+a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}

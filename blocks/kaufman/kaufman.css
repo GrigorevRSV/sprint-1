@@ -1,0 +1,23 @@
+.kaufman {
+  background-color: var(--gray-dark); /* #1f1f1f */
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0; /* отступы сверху и снизу */
+}
+
+/* Белый заголовок и подзаголовок мы уже сделали через модификаторы _theme_dark */
+
+/* Треугольник */
+.kaufman__triangle {
+  position: absolute;
+  right: -210px;
+  top: 0;
+  width: 877px;
+  height: 877px;
+
+  background-image: url("../../images/kaufman-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: 1;
+}
