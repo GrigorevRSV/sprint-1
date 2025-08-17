@@ -1,0 +1,40 @@
+/* Контейнер секции */
+.description {
+  padding: 100px 0;          /* вертикальные поля секции */
+}
+
+/* Двухколоночный блок */
+.two-columns {
+  display: grid;
+  grid-template-columns: 175px 1fr; /* слева кратко, справа основной текст */
+  gap: 64px;                        /* расстояние между колонками */
+  max-width: 1140px;
+  margin: 0 auto;                   /* центрируем внутри .page */
+}
+
+/* Левая колонка — кратко */
+.two-columns__brief {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #2f80ed;                   /* акцент как в макете */
+}
+
+/* Правая колонка — основной текст */
+.two-columns__main-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Абзацы справа */
+.two-columns__paragraph {
+  margin: 0 0 30px 0;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Внутренний акцент в тексте */
+.two-columns__span-accent {
+  font-weight: 700;
+}
