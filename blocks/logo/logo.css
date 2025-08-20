@@ -9,7 +9,7 @@
 /* Лого в шапке (позиционируем в левом верхнем углу) */
 .logo_place_header {
   position: absolute;
-  left: 64px;
+  left: 0px;
   top: 30px;
   background-image: url("../../images/logo_place_header.svg");
 }
