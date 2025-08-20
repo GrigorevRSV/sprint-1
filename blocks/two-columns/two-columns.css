@@ -1,12 +1,8 @@
-/* Контейнер секции */
-.description {
-  padding: 100px 0;          /* вертикальные поля секции */
-}
 
 /* Двухколоночный блок */
 .two-columns {
   display: grid;
-  grid-template-columns: 175px 1fr; /* слева кратко, справа основной текст */
+  grid-template-columns: 220px 1fr; /* слева кратко, справа основной текст */
   gap: 64px;                        /* расстояние между колонками */
   max-width: 1140px;
   margin: 0 auto;                   /* центрируем внутри .page */

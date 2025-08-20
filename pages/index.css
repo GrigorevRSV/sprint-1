@@ -38,8 +38,6 @@ a:hover { text-decoration: underline; }
 /* Вспомогательные утилиты (по мере надобности можно расширять) */
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); }
 
-.digits { padding: 100px 0; }
-
 a:hover { opacity: .8; }
 a:focus-visible {
   outline: 2px solid var(--blue);
